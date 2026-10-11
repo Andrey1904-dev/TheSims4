@@ -1,0 +1,11 @@
+{
+  "_comment": "Исходные строки мода. Для сборки в STBL нужно сконвертировать в формат игры (см. tools/). Ключи — стабильные идентификаторы.",
+  "trait.new_experiences.name": "New Experiences",
+  "trait.new_experiences.description": "Loves flirting, new faces, and freedom in romance. Chooses their own boundaries.",
+  "flirt.compliment.name": "Compliment",
+  "flirt.ask_out.name": "Ask on a Date",
+  "flirt.casual_offer.name": "Suggest Something Casual",
+  "consent.offer.accepted": "{0.SimFirstName} said yes.",
+  "consent.offer.declined": "{0.SimFirstName} politely said no. No hard feelings.",
+  "consent.offer.withdrawn": "{0.SimFirstName} changed their mind."
+}

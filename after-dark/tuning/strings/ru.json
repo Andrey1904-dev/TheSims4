@@ -1,0 +1,11 @@
+{
+  "_comment": "Русский перевод. Ключи совпадают с en_us.json.",
+  "trait.new_experiences.name": "Жажда новых впечатлений",
+  "trait.new_experiences.description": "Любит флирт, новые знакомства и свободу в романтике. Сама определяет свои границы.",
+  "flirt.compliment.name": "Комплимент",
+  "flirt.ask_out.name": "Пригласить на свидание",
+  "flirt.casual_offer.name": "Предложить что-то необязательное",
+  "consent.offer.accepted": "{0.SimFirstName} ответил(а) согласием.",
+  "consent.offer.declined": "{0.SimFirstName} вежливо отказал(а). Без обид.",
+  "consent.offer.withdrawn": "{0.SimFirstName} передумал(а)."
+}

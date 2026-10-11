@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv-tests/
+
+# Сборки и архивы (не храним в git — публикуются как GitHub Release)
+dist/
+build/
+*.ts4script
+*.package
+*.zip
+
+# Логи и локальные настройки игрока
+*.log
+after_dark_settings.local.json
+
+# Редакторы
+.idea/
+.vscode/
+*.swp

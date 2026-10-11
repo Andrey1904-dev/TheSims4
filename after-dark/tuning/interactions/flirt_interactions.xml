@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AFTER DARK 0.1.0 — взаимодействия флирта (черновик).
+
+  СТАТУС: ЧЕРНОВИК. Не проверено в игре.
+  Все взаимодействия:
+    * доступны только совершеннолетним участникам (min_age);
+    * предложения (свидание, связь) требуют ответа: принять / отказаться;
+    * отказ не даёт штрафов;
+    * число попыток ограничивается кулдауном и дневным лимитом (core/settings.py,
+      systems/sexuality/flirt.py), чтобы исключить бесконечные циклы.
+-->
+<I c="InteractionCollection" i="interaction" m="interactions.collection" n="AfterDark_Flirt_Collection">
+  <L n="interactions">
+    <!-- 1. Комплимент: нейтральный флирт, без предложения -->
+    <I c="SocialSuperInteraction" i="interaction" n="AfterDark_Flirt_Compliment" s="0x00AD0002A0000001">
+      <T n="display_name">0x00000000</T>
+      <T n="cooldown_key">flirt_compliment</T>
+      <T n="min_age">YOUNG_ADULT_OR_OLDER_PLACEHOLDER</T>
+      <T n="effect">attraction:+2 confidence:+1 (target)</T>
+    </I>
+    <!-- 2. Предложение свидания: требует явного согласия -->
+    <I c="SocialSuperInteraction" i="interaction" n="AfterDark_Flirt_AskOut" s="0x00AD0002A0000002">
+      <T n="display_name">0x00000000</T>
+      <T n="cooldown_key">flirt_ask_out</T>
+      <T n="min_age">YOUNG_ADULT_OR_OLDER_PLACEHOLDER</T>
+      <T n="requires_consent">True</T>
+      <T n="consent_kind">date</T>
+      <T n="decline_penalty">none</T>
+    </I>
+    <!-- 3. Предложение непродолжительной связи: требует явного согласия -->
+    <I c="SocialSuperInteraction" i="interaction" n="AfterDark_Flirt_CasualOffer" s="0x00AD0002A0000003">
+      <T n="display_name">0x00000000</T>
+      <T n="cooldown_key">flirt_casual_offer</T>
+      <T n="min_age">YOUNG_ADULT_OR_OLDER_PLACEHOLDER</T>
+      <T n="requires_consent">True</T>
+      <T n="consent_kind">casual</T>
+      <T n="decline_penalty">none</T>
+    </I>
+  </L>
+</I>
